@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( stereogram )
+find_package( OpenCV REQUIRED )
+message("OpenCV version: ${OpenCV_VERSION}")
+add_executable( stereogram stereogram.cpp )
+target_link_libraries( stereogram ${OpenCV_LIBS} )
